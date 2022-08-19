@@ -1,0 +1,112 @@
+/*this Section is for Scroll bar*/ 
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color :transparent;
+    -fx-border-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-border-radius :2.0em;
+}
+
+
+.scroll-bar:horizontal .increment-button ,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 0.0 10.0 0.0;
+
+}
+
+.scroll-bar:vertical .increment-button ,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color :transparent;
+    -fx-background-radius : 0.0em;
+    -fx-padding :0.0 10.0 0.0 0.0;
+
+}
+
+ .scroll-bar .increment-arrow,
+ .scroll-bar .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.15em 0.0;
+}
+
+ .scroll-bar:vertical .increment-arrow,
+ .scroll-bar:vertical .decrement-arrow{
+    -fx-shape : " ";    
+    -fx-padding :0.0 0.15em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color :derive(black,90.0%);
+    -fx-background-insets : 2.0, 0.0, 0.0;
+    -fx-background-radius : 2.0em;
+}
+/*end of scrollbar section*/
+
+.sidebar {
+    -fx-background-color: #101013 ;
+}
+.sidebtn {
+    -fx-background-color: transparent ;
+    -fx-font-size : 12px ;
+    -fx-text-fill : #8D939E ;
+}
+.sidebtn * {
+    -fx-fill : #8D939E ;
+}
+.active {
+    -fx-text-fill : #189286 ;
+    -fx-background-color:  #16161A ;
+}
+.active * {
+    -fx-fill : #189286 ;
+}
+.AddContactPane Label{
+    -fx-text-fill: #333 ;
+    -fx-font-size:14px;
+}
+
+.AddContactPane Button {
+    -fx-background-color: #333 ;
+    -fx-text-fill: #fff ;
+    -fx-font-size : 14px ;
+}
+.AddContactPane TextField {
+    -fx-background-color: transparent;
+    -fx-border-color: #ccc ;
+    -fx-border-radius: 5px ;
+}
+.greenbtn {
+    -fx-background-color: #189286 ;
+    -fx-text-fill: #fff ;
+}
+.redbtn {
+    -fx-background-color: #DA5042 ;
+    -fx-text-fill : #fff ;
+}
+
+.contactrow {
+    -fx-alignment: CENTER ;
+    -fx-pref-height: 70 ;
+    -fx-spacing: 30 ;
+}
+.contactrow VBox {
+    -fx-alignment: CENTER_LEFT ;
+    -fx-pref-height: 70 ;
+    -fx-pref-width:200 ;
+}
+.contactrow .label {
+    -fx-font-size : 16px ;
+    -fx-pref-height:25 ;
+    -fx-pref-width:200 ;
+    -fx-text-fill: #727272 ;
+}
+.contactrow .glyph-icon {
+    -fx-fill: #464646 ;
+}
+.contactrow-title.label {
+    -fx-font-size : 16px ;
+    -fx-font-weight: bold ;
+    -fx-text-fill : #000 ;
+}

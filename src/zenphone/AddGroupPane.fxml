@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane fx:id="AddGroupPane" prefHeight="548.0" prefWidth="592.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zenphone.AddGroupPaneController">
+   <children>
+      <VBox layoutX="3.0" layoutY="5.0" prefHeight="541.0" prefWidth="585.0" spacing="20.0" styleClass="AddContactPane">
+         <children>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="585.0" spacing="20.0">
+               <children>
+                  <Label text="Group name" />
+                  <TextField />
+               </children>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="301.0" prefWidth="585.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label style="-fx-text-fill: #555;" text="Available Contacts" />
+                        <ListView prefHeight="301.0" prefWidth="252.0" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" spacing="10.0">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" styleClass="greenbtn" text="Add">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="PLUS" size="14" />
+                           </graphic>
+                        </Button>
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="102.0" styleClass="redbtn" text="Delete">
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="REMOVE" />
+                           </graphic>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER">
+                     <children>
+                        <Label style="-fx-text-fill: #555;" text="Contacts on this Group" />
+                        <ListView prefHeight="301.0" prefWidth="252.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_CENTER" prefHeight="30.0" prefWidth="585.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#goBackGroupsPane" text="Cancel" />
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="119.0" styleClass="greenbtn" text="Save Group">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SAVE" size="18" />
+                     </graphic>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="121.0" styleClass="redbtn" text="delete Group">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="TRASH_ALT" size="18" text="" />
+                     </graphic>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</Pane>

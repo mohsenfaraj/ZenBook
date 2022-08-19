@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="MessagingPane" prefHeight="548.0" prefWidth="592.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zenphone.MessagingPaneController">
+   <children>
+      <Label layoutX="43.0" layoutY="40.0" text="Receptionists: ">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="145.0" layoutY="34.0" prefHeight="37.0" prefWidth="405.0" promptText="enter multiple number seprated by comma">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField layoutX="43.0" layoutY="113.0" prefHeight="265.0" prefWidth="507.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label layoutX="43.0" layoutY="82.0" text="Message:">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="201.0" layoutY="391.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="167.0" style="-fx-background-color: #2199D4; -fx-text-fill: #fff;" text="Send">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="SEND" size="18" />
+         </graphic>
+      </Button>
+   </children>
+</Pane>
